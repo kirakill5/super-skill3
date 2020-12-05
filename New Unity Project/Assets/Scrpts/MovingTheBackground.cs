@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MovingTheBackground : MonoBehaviour
 {
+    
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -13,5 +15,6 @@ public class MovingTheBackground : MonoBehaviour
             //We use GetComponent<SpritRenderer>().bouns.size.x get the Backgrouds size
         }
     }
+
 }
  
